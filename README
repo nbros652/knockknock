@@ -83,7 +83,7 @@ knockknock Overview:
     That's it.  Written in python, simple, single-packet, secure.
   
     The request is encrypted using AES in CTR mode, with an HMAC-SHA1
-    using the authenticate-then-encrypt paradigm.  It protects against
+    using the encrypt-then-authenticate paradigm.  It protects against
     evesdropping, replay attacks, and all known forms of cryptanalysis
     against IND-CCA secure schemes.
   
