@@ -71,8 +71,8 @@ def main(argv):
     createDirectory(profileName)
 
     random    = open('/dev/urandom', 'rb')
-    cipherKey = random.read(16)
-    macKey    = random.read(16)
+    cipherKey = random.read(32)
+    macKey    = random.read(32)
     counter   = 0
 
     profile = Profile(PROFILES_DIR + profileName, cipherKey, macKey, counter, knockPort)
